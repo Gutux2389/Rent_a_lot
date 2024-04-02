@@ -1,0 +1,32 @@
+[
+    {
+        "id" : 1,
+        "user" : "Potao tamo",
+        "image" : "https://purepng.com/public/uploads/large/purepng.com-businesspersonmanbusinessbusinesspersonbusinessmanpersons-1121525073028u2xwz.png",
+        "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, vel rerum perferendis ipsum deleniti voluptatem maxime quaerat quisquam expedita minus, alias amet fugiat quod a laboriosam reprehenderit esse magni fuga?"
+    },
+    {
+        "id" : 2,
+        "user" : "Potao tamo",
+        "image" : "https://purepng.com/public/uploads/large/businessman-uq0.png",
+        "text" : " ipsum deleniti voluptatem maxime quaerat quisquam expedita minus, alias amet fugiat quod a laboriosam reprehenderit esse magni fuga?"
+    },
+    {
+        "id" : 3,
+        "user" : "Potao tamo",
+        "image" : "https://purepng.com/public/uploads/large/businessman-n0p.png",
+        "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, vel rerum perferendis ipsum deleniti voluptatem maxime quaerat quisquam expedita minus, alias amet fugiat quod a laboriosam reprehenderit esse magni fuga?"
+    },
+    {
+        "id" : 4,
+        "user" : "Potao tamo",
+        "image" : "https://purepng.com/public/uploads/large/businessman-1aq.png",
+        "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, vel rerum perferendis ipsum deleniti voluptatem maxime quaerat quisquam expedita minus, alias amet fugiat quod a laboriosam reprehenderit esse magni fuga?"
+    },
+    {
+        "id" : 5,
+        "user" : "Potao tamo",
+        "image" : "https://purepng.com/public/uploads/large/businessman-onj.png",
+        "text" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, vel rerum perferendis ipsum deleniti voluptatem maxime quaerat quisquam expedita minus, alias amet fugiat quod a laboriosam reprehenderit esse magni fuga?"
+    }
+]
