@@ -311,7 +311,7 @@ function App() {
       <div class="">
         <Testimonials />
       </div>
-      <div class="md:mt-96 flex">
+      <div class="sm:mt-5 md:mt-96 flex">
         <img src={redCar}
          class="w-1/2 h-auto mx-auto  md:mb-auto scale-x-[-1]" />
         <div class="mx-auto"> 
