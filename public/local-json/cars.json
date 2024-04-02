@@ -1,0 +1,72 @@
+[
+    {
+        "id" : 1,
+        "name" : "Toyota Corolla",
+        "year" : 2009,
+        "image" : "https://purepng.com/public/uploads/large/sedan-2009-toyota-corolla-trj.png",
+        "price" : 5000
+    },
+    {
+        "id" : 2,
+        "name" : "Honda Accord Sedan",
+        "year" : 2013,
+        "image" : "https://purepng.com/public/uploads/large/2013-honda-accord-sedan-oas.png",
+        "price" : 6000
+    },
+    {
+        "id" : 3,
+        "name" : "Ford Mustang",
+        "year" : 2009,
+        "image" : "https://purepng.com/public/uploads/large/purepng.com-ford-mustangford-mustangford-falconcompact-carcars-17015274820296xvou.png",
+        "price" : 8000
+    },
+    {
+        "id" : 4,
+        "name" : "Chevrolet Impala",
+        "year" : 2009,
+        "image" : "https://purepng.com/public/uploads/large/purepng.com-chevrolet-impalacarschevroletchevyautomobilechevrolet-impala-1701527430578kztgr.png",
+        "price" : 6500
+    },
+    {
+        "id" : 5,
+        "name" : "Nissan Murano",
+        "year" : 2009,
+        "image" : "https://purepng.com/public/uploads/large/purepng.com-nissan-murano-carcarvehicletransportnissan-961524665822ad3m3.png",
+        "price" : 5000
+    },
+    {
+        "id" : 6,
+        "name" : "Black BMW M760Li xDrive",
+        "year" : 2009,
+        "image" : "https://purepng.com/public/uploads/large/purepng.com-black-bmw-m760li-xdrive-carcarbmwvehicletransport-961524661791cjzvl.png",
+        "price" : 5000
+    },
+    {
+        "id" : 7,
+        "name" : "Tesla Model S Red",
+        "year" : 2009,
+        "image" : "https://purepng.com/public/uploads/large/purepng.com-tesla-model-s-red-carcarvehicletransporttesla-961524657832miq7l.png",
+        "price" : 5000
+    },
+    {
+        "id" : 8,
+        "name" : "Black Edition Audi Luxury",
+        "year" : 2009,
+        "image" : "https://purepng.com/public/uploads/large/black-edition-audi-luxury-car-1nm.png",
+        "price" : 5000
+    },
+    {
+        "id" : 9,
+        "name" : "Mercedes Benz GLE Coupe White",
+        "year" : 2009,
+        "image" : "https://purepng.com/public/uploads/large/purepng.com-mercedes-benz-gle-coupe-white-carcarvehicletransportmercedes-benz-961524660217nch4l.png",
+        "price" : 5000
+    },
+    {
+        "id" : 10,
+        "name" : "Subaru",
+        "year" : 2009,
+        "image" : "https://purepng.com/public/uploads/large/purepng.com-subarusubaruautomobilessubaru-carssubaru-vehicles-1701527676575fl9da.png",
+        "price" : 5000
+    }
+]
