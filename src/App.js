@@ -173,7 +173,7 @@ function App() {
           <div class="sm:hidden ml-auto">
             <List
               size="30"
-              class="mt-2"
+              class="mt-2 mr-3"
               onClick={() => setOffCanvas(!offCanvas)}
             />
           </div>
