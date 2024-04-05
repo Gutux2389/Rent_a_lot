@@ -60,7 +60,7 @@ export const Budgeting = (props) =>{
             </div>
          </div>
          <div class="flex flex-col mb-5">
-            <div class="flex justify-center items-center mb-14">
+            <div class="flex flex-col sm:flex-row justify-center items-center mb-14">
             <div class="mx-auto relative">
             <label for="make" class="block font-medium">Search by make</label>
             <input type="text" id="make" value={makeName ? makeName : null} class="border border-black rounded-lg" onChange={(e)=>{searchSuggestion(e.target.value);}} />
@@ -79,7 +79,7 @@ export const Budgeting = (props) =>{
             </div>
             <div class="mx-auto">
             <label for="transmission" class="block font-medium">Search by transmission</label>
-            <select onClick={(e)=>setTransmissionType(e.target.value)}  type="text" id="transmission" class="border border-black rounded-lg w-40">
+            <select onClick={(e)=>setTransmissionType(e.target.value)}  type="text" id="transmission" class="border border-black rounded-lg w-44">
               <option value={null}>none</option>
               <option value="Automatic">Automatic</option>
               <option value="CVT">CVT</option>
@@ -88,14 +88,14 @@ export const Budgeting = (props) =>{
             </div>
             <div class="mx-auto">
             <label for="prices" class="block font-medium">Search by Price</label>
-            <input type="text" id="prices" class="border border-black rounded-lg" onChange={(e)=>setBudget(e.target.value)} />
+            <input type="text" id="prices" class="border border-black rounded-lg block sm:inline" onChange={(e)=>setBudget(e.target.value)} />
             <select type="text" onChange={(e)=>setTimeSpan(e.target.value)}>
                 <option value="weekly">Weekly Fee</option>
                 <option value="monthly">Monthly Fee</option>
             </select>
             </div>
             </div>
-            <div class="ml-auto mr-40">
+            <div class="ml-auto sm:mr-40 ">
             <button onClick={()=>searchDeals()}  class="border border-red-600 py-3 px-5 bg-red-600 text-white rounded-xl">Search</button>
             </div>
             

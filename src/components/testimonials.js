@@ -34,7 +34,7 @@ export const Testimonials = () =>{
                          rounded-3xl p-5 flex flex-col mx-auto my-5 md:mx-0 md:my-0`}
                          onClick={()=>slide(user.id)}>
                             <p>{user.text}</p>
-                            <div class="flex ">
+                            <div class="flex flex-col xl:flex-row ">
                                 <div class="flex mt-2">
                                 <Star size="23" color="gold" weight="fill"/>
                                 <Star size="23" color="gold" weight="fill"/>
