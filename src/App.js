@@ -49,6 +49,10 @@ function App() {
   const offCanvasDummy = useRef(null);
   const aboutUsFirstDummy = useRef(null);
   const aboutUsSecondDummy = useRef(null);
+  const homeRef = useRef();
+  const aboutUsRef = useRef();
+  const contactUsRef = useRef();
+  const pricingRef = useRef();
   const snapBackCar = useRef();
   const snapBackVehicles = useRef();
   
@@ -134,10 +138,18 @@ function App() {
       >
         <span class="mx-auto text-red-500 p-2 mb-5">Rentalot</span>
         <ul class="mx-auto">
-          <li class="my-3 cursor-pointer">Home</li>
-          <li class="my-3 cursor-pointer">About</li>
-          <li class="my-3 cursor-pointer">Contact Us</li>
-          <li class="my-3 cursor-pointer">Pricing</li>
+          <li  class="my-3 cursor-pointer" onClick={() =>{
+              homeRef.current.scrollIntoView({ behavior: "smooth" });setOffCanvas(false);
+          }}>Home</li>
+          <li class="my-3 cursor-pointer" onClick={() =>{
+              aboutUsRef.current.scrollIntoView({ behavior: "smooth" });setOffCanvas(false);
+            }}>About</li>
+          <li class="my-3 cursor-pointer" onClick={() =>{
+              contactUsRef.current.scrollIntoView({ behavior: "smooth" });setOffCanvas(false);
+            }}>Contact Us</li>
+          <li class="my-3 cursor-pointer" onClick={() =>{
+              pricingRef.current.scrollIntoView({ behavior: "smooth" });setOffCanvas(false);
+            }}>Pricing</li>
         </ul>
       </span>
       <span
@@ -154,26 +166,40 @@ function App() {
           <span class="ml-10 text-red-500 p-2 ">Rentalot</span>
 
           <ul class="list-none mx-auto sm:flex hidden">
-            <li class="mx-2 md:mx-5 p-2  transition-all rounded-2xl overflow-hidden inline-flex bg-white border-stone-700 border  relative group hover:cursor-pointer">
+            <li class="mx-2 md:mx-5 p-2  transition-all rounded-2xl overflow-hidden inline-flex bg-white border-stone-700 border  relative group hover:cursor-pointer"
+            onClick={() =>
+              homeRef.current.scrollIntoView({ behavior: "smooth" })
+            }>
+              
               <span class="absolute justify-center transition-all left-0 top-0 rounded-2xl bg-red-600 w-full h-full text-center scale-0 group-hover:scale-100"></span>
               <span class="w-full text-black transition-colors duration-300 ease-in-out group-hover:text-white z-10">
                 Home
               </span>
+              
             </li>
 
-            <li class="mx-2 md:mx-5 p-2  transition-all rounded-2xl overflow-hidden inline-flex bg-white border-stone-700 border  relative group hover:cursor-pointer">
+            <li class="mx-2 md:mx-5 p-2  transition-all rounded-2xl overflow-hidden inline-flex bg-white border-stone-700 border  relative group hover:cursor-pointer"
+            onClick={() =>
+              aboutUsRef.current.scrollIntoView({ behavior: "smooth" })
+            }>
               <span class="absolute justify-center transition-all left-0 top-0 rounded-2xl bg-red-600 w-full h-full text-center scale-0 group-hover:scale-100"></span>
               <span class="w-full text-black transition-colors duration-300 ease-in-out group-hover:text-white z-10">
                 About
               </span>
             </li>
-            <li class="mx-2 md:mx-5 p-2  transition-all rounded-2xl overflow-hidden inline-flex bg-white border-stone-700 border  relative group hover:cursor-pointer">
+            <li class="mx-2 md:mx-5 p-2  transition-all rounded-2xl overflow-hidden inline-flex bg-white border-stone-700 border  relative group hover:cursor-pointer"
+            onClick={() =>
+              contactUsRef.current.scrollIntoView({ behavior: "smooth" })
+            }>
               <span class="absolute justify-center transition-all left-0 top-0 rounded-2xl bg-red-600 w-full h-full text-center scale-0 group-hover:scale-100"></span>
               <span class="w-full text-black transition-colors duration-300 ease-in-out group-hover:text-white z-10">
                 Contact Us
               </span>
             </li>
-            <li class="mx-2 md:mx-5 p-2  transition-all rounded-2xl overflow-hidden inline-flex bg-white border-stone-700 border  relative group hover:cursor-pointer">
+            <li class="mx-2 md:mx-5 p-2  transition-all rounded-2xl overflow-hidden inline-flex bg-white border-stone-700 border  relative group hover:cursor-pointer"
+            onClick={() =>
+              pricingRef.current.scrollIntoView({ behavior: "smooth" })
+            }>
               <span class="absolute justify-center transition-all left-0 top-0 rounded-2xl bg-red-600 w-full h-full text-center scale-0 group-hover:scale-100"></span>
               <span class="w-full text-black transition-colors duration-300 ease-in-out group-hover:text-white z-10">
                 Pricing
@@ -189,7 +215,7 @@ function App() {
           </div>
         </div>
         <div>
-          <div class="flex flex-col">
+          <div class="flex flex-col" ref={homeRef}>
             <div class="flex flex-col-reverse md:flex-col-reverse lg:flex-row ">
               <aside class=" w-1/2 md:w-1/4 mx-auto mt-auto my-10 lef-1/4 md:top-0">
                 <div class="font-bold ">
@@ -578,6 +604,7 @@ function App() {
             data={data}
             setPickedVehicle={setPickedVehicle}
             snapBackCar={snapBackCar}
+            pricingRef={pricingRef}
           />
         </div>
         <div class="overflow-x-hidden">
@@ -586,7 +613,7 @@ function App() {
               About Us
             </h1>
           </div>
-          <div>
+          <div ref={aboutUsRef}>
           <div class={`flex flex-col md:flex-row mb-5`} ref={aboutUsFirstDummy}>
               <img
                 class={`w-1/2 h-1/2  ${aboutUsFirst ? "mx-auto" : "-translate-x-full"} transition-all duration-500`}
@@ -681,7 +708,7 @@ function App() {
           src={fixedPhoto} />
           
         </div>
-        <div class="grid grid-flow-row grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="grid grid-flow-row grid-cols-2 lg:grid-cols-4 gap-4" ref={contactUsRef}>
           <div class="flex flex-col justify-center items-center">
               <div class="flex justify-center items-center">
                 <h1 class="bg-red-500 text-white p-2 border rounded-xl">Team</h1>

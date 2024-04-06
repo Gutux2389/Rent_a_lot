@@ -11,6 +11,7 @@ export const Budgeting = (props) =>{
     const data = props.data;
     const setPickedVehicle = props.setPickedVehicle;
     const snapBackCar = props.snapBackCar;
+    const pricingRef = props.pricingRef;
 
     const searchSuggestion = (makeName) =>{
       console.log('ha');
@@ -54,7 +55,7 @@ export const Budgeting = (props) =>{
     
     return(
         <div>
-         <div class="flex justify-center items-center mb-5">
+         <div class="flex justify-center items-center mb-5" ref={pricingRef}>
             <div class="bg-red-600 text-white p-2 rounded-lg">
               Find the most suitable deal for your budget
             </div>
