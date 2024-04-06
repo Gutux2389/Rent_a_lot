@@ -47,7 +47,7 @@ function App() {
 
   const dummy = useRef(null);
   const offCanvasDummy = useRef(null);
-  const aboutUsFirstDummy = useRef(null);
+  const aboutUsFirstDummy = useRef(null); 
   const aboutUsSecondDummy = useRef(null);
   const homeRef = useRef();
   const aboutUsRef = useRef();
@@ -160,7 +160,7 @@ function App() {
 
       <div>
         <div
-          ref={offCanvasDummy}
+          
           class="flex shadow-lg text-xl py-4 fixed w-full z-20 bg-white"
         >
           <span class="ml-10 text-red-500 p-2 ">Rentalot</span>

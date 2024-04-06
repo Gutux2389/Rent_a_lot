@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5809492b.css",
-    "main.js": "/static/js/main.5826bbe6.js",
+    "main.js": "/static/js/main.54f25d61.js",
     "static/js/453.2df5108a.chunk.js": "/static/js/453.2df5108a.chunk.js",
     "static/media/red-car.png": "/static/media/red-car.1449acdb9253c4e663f5.png",
     "static/media/Untitled.png": "/static/media/Untitled.b03b23ea4b772d3e97b6.png",
@@ -16,11 +16,11 @@
     "static/media/visa-logo-svgrepo-com.svg": "/static/media/visa-logo-svgrepo-com.386518271a8ccfab4a60f89d009354b7.svg",
     "index.html": "/index.html",
     "main.5809492b.css.map": "/static/css/main.5809492b.css.map",
-    "main.5826bbe6.js.map": "/static/js/main.5826bbe6.js.map",
+    "main.54f25d61.js.map": "/static/js/main.54f25d61.js.map",
     "453.2df5108a.chunk.js.map": "/static/js/453.2df5108a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5809492b.css",
-    "static/js/main.5826bbe6.js"
+    "static/js/main.54f25d61.js"
   ]
 }
