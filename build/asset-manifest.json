@@ -1,18 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.3cd2a898.css",
-    "main.js": "/static/js/main.77a658c1.js",
+    "main.css": "/static/css/main.5809492b.css",
+    "main.js": "/static/js/main.548e1e08.js",
     "static/js/453.2df5108a.chunk.js": "/static/js/453.2df5108a.chunk.js",
     "static/media/red-car.png": "/static/media/red-car.1449acdb9253c4e663f5.png",
+    "static/media/Untitled.png": "/static/media/Untitled.b03b23ea4b772d3e97b6.png",
+    "static/media/PngItem_5110486.png": "/static/media/PngItem_5110486.9be0c3c03b0e9b62b9c6.png",
+    "static/media/sl_z_072523_61700_08.jpg": "/static/media/sl_z_072523_61700_08.a2669b088c228696eefa.jpg",
+    "static/media/IMG_20240405_191356.jpg": "/static/media/IMG_20240405_191356.2a89d1b6e08f9670aff6.jpg",
+    "static/media/download-on-the-app-store-apple-logo-svgrepo-com.svg": "/static/media/download-on-the-app-store-apple-logo-svgrepo-com.c192f2fdf7eaf0429cb6b8e9565177a2.svg",
+    "static/media/google-play-badge-logo-svgrepo-com.svg": "/static/media/google-play-badge-logo-svgrepo-com.11ee92b920fa28fae8596587d80245f7.svg",
+    "static/media/gmail-icon-logo-svgrepo-com.svg": "/static/media/gmail-icon-logo-svgrepo-com.bccb34815dafa7bca0399b021f994e46.svg",
     "static/media/mastercard-svgrepo-com.svg": "/static/media/mastercard-svgrepo-com.1e87384d57b62f4e3177f16b8f7bafb6.svg",
+    "static/media/linkedin-svgrepo-com.svg": "/static/media/linkedin-svgrepo-com.19ab380e6e940cf89e9784f11279f6f4.svg",
     "static/media/visa-logo-svgrepo-com.svg": "/static/media/visa-logo-svgrepo-com.386518271a8ccfab4a60f89d009354b7.svg",
     "index.html": "/index.html",
-    "main.3cd2a898.css.map": "/static/css/main.3cd2a898.css.map",
-    "main.77a658c1.js.map": "/static/js/main.77a658c1.js.map",
+    "main.5809492b.css.map": "/static/css/main.5809492b.css.map",
+    "main.548e1e08.js.map": "/static/js/main.548e1e08.js.map",
     "453.2df5108a.chunk.js.map": "/static/js/453.2df5108a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3cd2a898.css",
-    "static/js/main.77a658c1.js"
+    "static/css/main.5809492b.css",
+    "static/js/main.548e1e08.js"
   ]
 }

@@ -1,4 +1,12 @@
 import redCar from "./photos/red-car.png";
+import blankPhone from './photos/PngItem_5110486.png';
+import fillPhone from './photos/IMG_20240405_191356.jpg';
+import playStore from './photos/google-play-badge-logo-svgrepo-com.svg';
+import appStore from './photos/download-on-the-app-store-apple-logo-svgrepo-com.svg';
+import fixedPhoto from './photos/Untitled.png';
+import xLogo from './photos/sl_z_072523_61700_08.jpg';
+import gmailLogo from './photos/gmail-icon-logo-svgrepo-com.svg';
+import linkedinLogo from './photos/linkedin-svgrepo-com.svg';
 import { useState, useEffect, useRef } from "react";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
@@ -15,6 +23,8 @@ import {
   User,
   Headset,
   List,
+  GooglePlayLogo,
+  AppStoreLogo
 } from "@phosphor-icons/react";
 import { CaretUp } from "@phosphor-icons/react/dist/ssr";
 import visaCard from "./photos/visa-logo-svgrepo-com.svg";
@@ -631,6 +641,120 @@ function App() {
 
           </div>
         </div>
+        <div class="relative my-28">
+          <div class="my-auto sm:left-1/4 xl:border border-black rounded-xl sm:p-28 xl:p-5 p-10 w-1/2 sm:w-5/6 mx-auto">
+            <div class="mx-auto">
+            Download Our App to take advantages of special <span class="text-red-600">Deals</span> on it.
+            
+            </div>
+            <div class="">
+            <div class="flex flex-col sm:flex-row ">
+            <button class="border rounded-xl p-3 border-black my-auto mx-auto sm:mx-2  group inline-flex relative w-full sm:w-[150px] h-1/2 overflow-hidden">
+              <div class="group-hover:text-white transition-colors duration-500 ease-in-out z-10">
+              <GooglePlayLogo size="22" class="inline" />
+              Google Play
+              </div>
+              <div class="absolute gradient-google transition-all duration-500 origin-top-left scale-0 group-hover:scale-100 w-full h-full rounded-xl top-0 left-0">
+              </div>
+            </button>
+            <img src={playStore} class="w-full sm:w-[150px]" />
+            </div>
+            <div class="flex flex-col sm:flex-row">
+            <button class="border rounded-xl p-3 border-black my-auto mx-auto sm:mx-2 group w-full sm:w-[150px] h-1/2 inline-flex relative overflow-hidden">
+            <div class="group-hover:text-white transition-colors duration-500 ease-in-out z-10">
+            <AppStoreLogo size="22" class="inline" />
+              App Store
+              </div>
+              <div class="absolute group-hover:bg-blue-500 transition-all duration-500 origin-top-left scale-0 group-hover:scale-100 w-full h-full rounded-xl top-0 left-0">
+              </div>
+            </button>
+            <img src={appStore} class="w-full sm:w-[150px]" />
+            </div>
+            </div>
+
+          </div>
+          <img 
+          class="xl:absolute relative
+          w-1/2 mx-auto transform 
+          xl:right-1/4 xl:w-1/4 xl:top-[-120px]
+          "
+          src={fixedPhoto} />
+          
+        </div>
+        <div class="grid grid-flow-row grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="flex flex-col justify-center items-center">
+              <div class="flex justify-center items-center">
+                <h1 class="bg-red-500 text-white p-2 border rounded-xl">Team</h1>
+                
+              </div>
+              <ul class="">
+                <li class="m-2 text-lg">Ashely Mellow</li>
+                <li class="m-2 text-lg">Joseph Baron</li>
+                <li class="m-2 text-lg">William Smith</li>
+                <li class="m-2 text-lg">Michael Berg</li>
+              </ul>
+          </div>
+          <div class="flex flex-col justify-center items-center overscroll-y-hidden">
+          <div class="flex justify-center items-center">
+                <h1 class="bg-red-500 text-white p-2 border rounded-xl">Copyright</h1>
+                
+          </div>
+          <div>
+                  Reserved rights to name and likeness of Rent-a-lot.
+                  2024 &copy; Copyright.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas nec magna id nibh ullamcorper facilisis. Suspendisse
+                  volutpat tempus vestibulum. Fusce mattis mi id maximus
+                  accumsan. Mauris non nisl dictum tellus vestibulum convallis
+                  non in metus.
+          </div>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+          <div class="flex justify-center items-center">
+                <h1 class="bg-red-500 text-white p-2 border rounded-xl">Contacts</h1>
+                
+          </div>
+          <ul class="">
+                <li class="my-2 text-lg flex sm:flex-row flex-col justify-center items-center sm:justify-normal">
+                  <img src={xLogo} class="w-1/6 h-1/2" />
+                  <div class="ml-3">
+                    <div class="">Rentalot</div>
+                    <div class="font-light relative top-[-9px]">@rentalot</div>
+                  </div>
+                </li>
+                <li class="my-2 text-lg flex sm:flex-row flex-col justify-center items-center sm:justify-normal">
+                  <img src={gmailLogo} class="w-1/6 h-1/2" />
+                  <div class="ml-3">
+                    <div class="">RentalotBusiness@gmail.com</div>
+                    
+                  </div>
+                </li>
+                <li class="my-2 text-lg flex sm:flex-row flex-col justify-center items-center sm:justify-normal">
+                  <img src={linkedinLogo} class="w-1/6 h-1/2" />
+                  <div class="ml-3">
+                    <div class="">Rent-a-lot</div>
+                    
+                  </div>
+                </li>
+                
+          </ul>
+          </div>
+          <div>
+          <div class="flex justify-center items-center">
+                <h1 class="bg-red-500 text-white p-2 border rounded-xl">Letter</h1>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <h1>Join our letter for updates and new Deals</h1>
+            <input class="w-full border rounded-lg" type="text" placeholder="......@gmail.com" />
+            <button class="border rounded-lg p-2 bg-red-500 text-white m-2 ">
+              Join Letter
+            </button>
+          </div>
+          </div>
+        </div>
+        <div>
+        <a href="https://www.freepik.com/free-vector/twitter-app-new-logo-x-black-background_57643037.htm#query=twitter%20x%20logo&position=29&from_view=keyword&track=ais&uuid=ed17a9d4-869e-4c8d-b8e0-2837cf1095ff">Image by starline</a> on Freepik
+        </div>
+
       </div>
     </div>
   );
