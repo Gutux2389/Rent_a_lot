@@ -605,6 +605,7 @@ function App() {
             setPickedVehicle={setPickedVehicle}
             snapBackCar={snapBackCar}
             pricingRef={pricingRef}
+            setCarPicker={setCarPicker}
           />
         </div>
         <div class="overflow-x-hidden">
@@ -709,7 +710,7 @@ function App() {
           
         </div>
         <div class="grid grid-flow-row grid-cols-2 lg:grid-cols-4 gap-4" ref={contactUsRef}>
-          <div class="flex flex-col justify-center items-center">
+          <div class="flex flex-col justify-center items-center mb-auto">
               <div class="flex justify-center items-center">
                 <h1 class="bg-red-500 text-white p-2 border rounded-xl">Team</h1>
                 

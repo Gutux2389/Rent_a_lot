@@ -1,5 +1,5 @@
 import { Gauge,Car,GasPump } from "@phosphor-icons/react";
-import { useState } from "react";
+import { useState,useRef, useEffect } from "react";
 
 export const Budgeting = (props) =>{
     const [makeName,setMakeName] = useState(null);
@@ -12,6 +12,20 @@ export const Budgeting = (props) =>{
     const setPickedVehicle = props.setPickedVehicle;
     const snapBackCar = props.snapBackCar;
     const pricingRef = props.pricingRef;
+    const dummy = useRef(null);
+
+    useEffect(()=>{
+      const outsideClick = (event) =>{
+        if(!dummy.current?.contains(event.target)){
+          setFilteredMake(false);
+        }
+      }
+      window.addEventListener("mousedown",outsideClick);
+
+      return () =>{
+        window.removeEventListener("mousedown",outsideClick);
+      }
+    },[dummy])
 
     const searchSuggestion = (makeName) =>{
       console.log('ha');
@@ -62,15 +76,15 @@ export const Budgeting = (props) =>{
          </div>
          <div class="flex flex-col mb-5">
             <div class="flex flex-col sm:flex-row justify-center items-center mb-14">
-            <div class="mx-auto relative">
+            <div class="mx-auto relative" ref={dummy}>
             <label for="make" class="block font-medium">Search by make</label>
-            <input type="text" id="make" value={makeName ? makeName : null} class="border border-black rounded-lg" onChange={(e)=>{searchSuggestion(e.target.value);}} />
+            <input type="text" id="make" value={makeName ? makeName : null} class="border border-black rounded-lg" onChange={(e)=>{searchSuggestion(e.target.value);setMakeName(null);}} />
             {filteredMake &&
-            <div class="h-13 w-full border border-black overflow-y-auto absolute">
+            <div class="h-13 w-full border border-black overflow-y-auto absolute z-20 bg-white">
                 {filteredMake.map((make)=>{
                   const name = make.make;
                   return(
-                    <div onClick={()=>setMakeName(name)} class="border-b border-black last:border-none text-lg p-2">
+                    <div onClick={()=>{setMakeName(name);setFilteredMake(null)}} class="border-b border-black last:border-none text-lg p-2 cursor-pointer">
                       {name}
                     </div>
                   )
@@ -80,7 +94,7 @@ export const Budgeting = (props) =>{
             </div>
             <div class="mx-auto">
             <label for="transmission" class="block font-medium">Search by transmission</label>
-            <select onClick={(e)=>setTransmissionType(e.target.value)}  type="text" id="transmission" class="border border-black rounded-lg w-44">
+            <select onClick={(e)=>setTransmissionType(e.target.value)}  type="text" id="transmission" class="border border-black rounded-lg w-full">
               <option value={null}>none</option>
               <option value="Automatic">Automatic</option>
               <option value="CVT">CVT</option>
